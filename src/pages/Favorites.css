@@ -1,0 +1,201 @@
+
+.favorites-page {
+    min-height: 80vh;
+    padding: 65px 7%;
+    background: var(--bg-primary);
+}
+
+.favorites-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.favorites-heading > span {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.favorites-heading h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.favorites-heading p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.favorites-listing-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.favorites-listing-heading h2 {
+    font-size: 23px;
+}
+
+.favorites-listing-heading span {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.favorite-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.favorite-image {
+    height: 220px;
+    position: relative;
+}
+
+.favorite-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favorite-image > span {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    background: white;
+    color: #222;
+    padding: 6px 13px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.remove-favorite-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.favorite-info {
+    padding: 20px;
+}
+
+.favorite-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.favorite-info h3 {
+    font-size: 19px;
+    margin: 12px 0 18px;
+}
+
+.favorite-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.favorite-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.favorite-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.favorite-bottom h4 {
+    font-size: 19px;
+    color: var(--accent);
+}
+
+.favorite-bottom a,
+.empty-favorites a {
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.empty-favorites {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.empty-favorites > svg {
+    color: var(--accent);
+}
+
+.empty-favorites p {
+    color: var(--text-secondary);
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+    .favorites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .favorites-page {
+        padding: 45px 5%;
+    }
+
+    .favorites-heading h1 {
+        font-size: 28px;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorites-listing-heading h2 {
+        font-size: 19px;
+    }
+}

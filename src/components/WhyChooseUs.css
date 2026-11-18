@@ -1,0 +1,128 @@
+
+/* WHY CHOOSE US */
+
+.why-section {
+    max-width: 1450px;
+    margin: 100px auto 0;
+}
+
+/* HEADING */
+
+.why-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.why-heading span {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.why-heading h2 {
+    margin-top: 12px;
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 650;
+}
+
+.why-heading p {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* FEATURE GRID */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* FEATURE CARD */
+
+.why-card {
+    position: relative;
+    min-height: 235px;
+    padding: 28px 23px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+/* ICON */
+
+.why-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background: var(--bg-primary);
+    color: var(--accent);
+}
+
+/* NUMBER */
+
+.why-number {
+    position: absolute;
+    top: 30px;
+    right: 23px;
+    color: var(--border-color);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* CARD TEXT */
+
+.why-card h3 {
+    margin-top: 25px;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.why-card p {
+    margin-top: 11px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .why-section {
+        margin-top: 70px;
+    }
+
+    .why-heading {
+        margin-bottom: 30px;
+    }
+
+    .why-heading h2 {
+        font-size: 26px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .why-card {
+        min-height: 205px;
+        padding: 24px;
+    }
+}

@@ -1,0 +1,136 @@
+
+/* CLIENT REVIEWS */
+
+.client-reviews-section {
+    max-width: 1450px;
+    margin: 100px auto 0;
+}
+
+/* HEADING */
+
+.reviews-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reviews-heading span {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.reviews-heading h2 {
+    margin-top: 12px;
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 650;
+}
+
+.reviews-heading p {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* REVIEWS GRID */
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* REVIEW CARD */
+
+.review-card {
+    padding: 27px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+/* REVIEW TOP */
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--accent);
+}
+
+.review-stars {
+    display: flex;
+    gap: 4px;
+    color: var(--accent);
+}
+
+/* REVIEW TEXT */
+
+.review-text {
+    min-height: 105px;
+    margin-top: 23px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* USER DETAILS */
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.review-user img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-user h3 {
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.review-user p {
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .client-reviews-section {
+        margin-top: 70px;
+    }
+
+    .reviews-heading h2 {
+        font-size: 26px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .review-card {
+        padding: 22px;
+    }
+}

@@ -1,0 +1,46 @@
+
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT THEME */
+
+:root {
+    --bg-primary: #F8F6F1;
+    --bg-secondary: #FFFFFF;
+    --text-primary: #222222;
+    --text-secondary: #666666;
+    --accent: #B99A5B;
+    --border-color: #E8E2D6;
+}
+
+/* DARK THEME */
+
+[data-theme="dark"] {
+    --bg-primary: #171717;
+    --bg-secondary: #242424;
+    --text-primary: #F5F1E8;
+    --text-secondary: #B5B0A5;
+    --accent: #C5A66A;
+    --border-color: #38332B;
+}
+
+/* APPLY THEME */
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}

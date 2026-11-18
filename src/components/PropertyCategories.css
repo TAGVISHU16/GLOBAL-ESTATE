@@ -1,0 +1,141 @@
+
+/* PROPERTY CATEGORIES */
+
+.categories-section {
+    max-width: 1450px;
+    margin: 90px auto 0;
+}
+
+/* HEADING */
+
+.categories-heading {
+    margin-bottom: 30px;
+}
+
+.categories-heading span {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.categories-heading h2 {
+    margin-top: 9px;
+    color: var(--text-primary);
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.categories-heading p {
+    margin-top: 9px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* CATEGORY GRID */
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* CATEGORY CARD */
+
+.category-card {
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    cursor: pointer;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* IMAGE OVERLAY */
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.82),
+        rgba(0, 0, 0, 0.08) 75%
+    );
+}
+
+/* CATEGORY CONTENT */
+
+.category-overlay {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.category-overlay h3 {
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.category-overlay p {
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+}
+
+/* CATEGORY ARROW */
+
+.category-arrow {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .categories-section {
+        margin-top: 65px;
+    }
+
+    .categories-heading h2 {
+        font-size: 25px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .category-card {
+        height: 260px;
+    }
+}

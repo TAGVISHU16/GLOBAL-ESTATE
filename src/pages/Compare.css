@@ -1,0 +1,185 @@
+
+.compare-page {
+    min-height: 80vh;
+    padding: 65px 7%;
+    background: var(--bg-primary);
+}
+
+.compare-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.compare-heading span {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.compare-heading h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.compare-heading p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.back-to-properties {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.comparison-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 18px 15px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.comparison-table thead th:first-child {
+    min-width: 150px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.comparison-table tbody th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.comparison-table td {
+    font-size: 14px;
+}
+
+.comparison-table td > svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    color: var(--accent);
+}
+
+.compare-property {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.compare-property img {
+    width: 100%;
+    max-width: 230px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.compare-property h3 {
+    font-size: 16px;
+}
+
+.compare-property a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.remove-compare-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.compare-note {
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    text-align: right;
+}
+
+.compare-empty {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.compare-empty h2 {
+    font-size: 25px;
+}
+
+.compare-empty p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.compare-empty a {
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 650px) {
+    .compare-page {
+        padding: 45px 5%;
+    }
+
+    .compare-heading h1 {
+        font-size: 28px;
+    }
+
+    .compare-heading p {
+        line-height: 1.6;
+    }
+
+    .compare-note {
+        text-align: left;
+    }
+}
